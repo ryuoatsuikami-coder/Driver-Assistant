@@ -1,1 +1,16 @@
 
+name: Build DriverAssistant APK
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Source
+        uses: actions/checkout@v4
+
+      - name: Show Files
+        run: ls -la
